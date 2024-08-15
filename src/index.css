@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Normal */
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+@screen md {
+  .font-bold {
+    font-weight: 600;
+  }
+}
