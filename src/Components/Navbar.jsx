@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <nav className="w-full h-[70px] bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -77,7 +77,7 @@ const Navbar = () => {
 
         {/* Mobile navigation (shown/hidden based on isMenuOpen) */}
         <div
-          className={`absolute top-full left-0 z-10 w-full bg-white dark:bg-gray-900 md:hidden transform ${
+          className={` top-full left-0 z-10 w-full bg-white dark:bg-gray-900 md:hidden transform ${
             isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
           }`}
           style={{
